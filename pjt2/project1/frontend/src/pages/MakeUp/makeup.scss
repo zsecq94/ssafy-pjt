@@ -1,0 +1,85 @@
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-5%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.makeup-wrapper {
+  background: rgb(255, 255, 255);
+  margin-top: 5vh;
+  position: relative;
+  padding: 1rem;
+  opacity: 0;
+  animation: smoothAppear 1s forwards;
+  animation-delay: 0.5s;
+  font-family: "Gugi";
+  text-align: center;
+  .similar-img {
+    img {
+      width: 170px;
+      height: 170px;
+      border-radius: 50px;
+      object-fit: cover;
+      margin: 20px;
+    }
+  }
+  .makeup-header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  .makeup-submitButton {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .makeup-disable-button {
+      border: none;
+      font-size: 1.1rem;
+      cursor: not-allowed;
+      font-family: "Gugi";
+    }
+    .makeup-success-button {
+      font-size: 1.1rem;
+      font-family: "Gugi";
+    }
+  }
+  .makeup-body {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    img {
+      width: 270px;
+      height: 270px;
+      border-radius: 50px;
+      object-fit: cover;
+      margin: 20px;
+    }
+    .outputimg {
+      display: flex;
+    }
+  }
+  .change-pc {
+    font-size: 1.1rem;
+    font-family: "Gugi";
+  }
+  .makeup-footer {
+    img {
+      width: 270px;
+      height: 270px;
+      border-radius: 50px;
+      object-fit: cover;
+      margin: 20px;
+    }
+    font-family: "Gugi";
+  }
+}

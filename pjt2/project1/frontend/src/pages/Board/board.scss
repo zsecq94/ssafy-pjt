@@ -1,0 +1,145 @@
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .board-wrapper {
+    width: 1000px;
+    .board-body {
+      height: 350px;
+    }
+    .board-content {
+      height: 250px;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .board-wrapper {
+    width: 650px;
+    .board-body {
+      height: 600px;
+    }
+    .board-content {
+      height: 200px;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .board-wrapper {
+    width: 460px;
+    .board-body {
+      height: 380px;
+    }
+    .board-content {
+      height: 100px;
+    }
+  }
+}
+
+.edit-delete-button {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 0.7rem;
+  button {
+    font-size: 1.2rem;
+  }
+  .delete-button {
+    margin-left: 0.5rem;
+  }
+}
+
+.modal {
+  .modal-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 0;
+  }
+  .modal-button {
+    display: flex;
+    margin: 2px;
+    // align-items: center;
+    justify-content: end;
+    button {
+      font-size: 1rem;
+    }
+  }
+}
+
+.board-wrapper {
+  // display: flex;
+  // justify-content: center;
+  transition: width 1s;
+  margin: 0 auto 1.5rem auto;
+  opacity: 0;
+  border-radius: 10px;
+  animation: smoothAppear 1.5s forwards;
+  animation-delay: 0.5s;
+  font-family: "Gugi";
+  background-color: #fff;
+  padding: 4rem;
+  .board-header {
+    justify-content: space-between;
+    align-items: baseline;
+    display: flex;
+    .board-header-username {
+      font-size: 2rem;
+    }
+    .board-header-date {
+      font-size: 1.5rem;
+      vertical-align: baseline;
+    }
+  }
+  .board-body {
+    display: flex;
+    .board-image {
+      flex-shrink: 0;
+      margin-right: 1rem;
+      width: 300px;
+      height: 300px;
+      img {
+        border-radius: 15px;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .board-title-content {
+    .board-user-info {
+      font-weight: 200;
+      display: flex;
+      align-items: center;
+      color: #282c34;
+      font-size: 3px;
+      justify-content: start;
+      img {
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+      }
+      h1 {
+        margin-left: 10px;
+      }
+    }
+    .board-title {
+      text-align: start;
+      align-items: start;
+    }
+    .board-content {
+      text-align: start;
+      padding: 10px;
+      font-weight: 200;
+    }
+  }
+}

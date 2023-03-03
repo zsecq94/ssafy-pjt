@@ -1,0 +1,34 @@
+.newboard-uploader-wrapper {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  .newboard-body {
+    .board-image {
+      img {
+        object-fit: cover;
+        border-radius: 20px;
+        width: 80%;
+      }
+    }
+    .board-title-content {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
+
+.board-title-content{
+  .board-title{
+    color: navy;
+    font-size: 25px;
+  }
+  // .board-content{
+  //   padding: 10px;
+  //   height: 250px;
+  //   background-color: rgb(234, 253, 255);
+  //   border-radius: 15px;
+
+  // }
+}

@@ -1,0 +1,50 @@
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+.user-profile-wrapper{
+  padding: 2rem;
+  opacity: 0;
+  animation: smoothAppear 0.5s forwards;
+  animation-delay: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: 'Gugi';
+  hr {
+    width: 100%;
+    color: black;
+  }
+  .user-profile-header{
+    color: midnightblue;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    .user-header-img{
+      width: 50%;
+      padding-right: 10%;
+    }
+    .user-follow{
+      font-size: small;
+    }
+  }
+  .user-profile-boardList-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .user-profile-myself{
+    text-align: left;
+    input{
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.my-imguploader-main{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.profile-img{
+    border-radius: 150px;
+    object-fit: cover;
+}
+@media all and (min-width: 1025px) {
+    .profile-img{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media all and (max-width: 1024px) {
+    .profile-img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media all and (max-width: 768px) {
+    .profile-img{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media all and (max-width: 368px) {
+    .profile-img{
+        width: 100px;
+        height: 100px;
+    }
+}

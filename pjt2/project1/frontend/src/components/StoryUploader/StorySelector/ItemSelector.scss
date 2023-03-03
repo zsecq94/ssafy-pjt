@@ -1,0 +1,30 @@
+.story-board-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin: 0 15px;
+  padding-top: -50px;
+  hr {
+    width: 100%;
+    color: black;
+  }
+  .upload-button {
+    button {
+      margin: 10px 5px;
+      font-size: 5%;
+    }
+    .submitButton {
+      padding: 5px;
+    }
+  }
+}
+.submitButton {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  button {
+  }
+}

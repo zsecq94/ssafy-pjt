@@ -1,0 +1,18 @@
+{
+    "development" : {
+        "username" : "ssafy201",
+        "password" : "1234",
+        "database" : "IGOAT",
+        "host" : "52.78.177.38",
+        "port" : "3306",
+        "dialect" : "mysql"
+    },
+    "development2" : {
+        "username" : "root",
+        "password" : "1234",
+        "database" : "igoat",
+        "host" : "127.0.0.1",
+        "port" : "3306",
+        "dialect" : "mysql"
+    }
+}

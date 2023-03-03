@@ -1,0 +1,66 @@
+@media all and (min-width: 1024px) {
+  .circle {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 100;
+    &:hover {
+      width: 65px;
+      height: 65px;
+      box-shadow: rgba(0, 0, 0, 0.9) 0px 22px 80px 4px;
+    }
+  }
+}
+@media all and (max-width: 1024px) {
+  .circle {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 100;
+    &:hover {
+      width: 65px;
+      height: 65px;
+      box-shadow: rgba(0, 0, 0, 0.9) 0px 22px 80px 4px;
+    }
+  }
+}
+@media all and (max-width: 787px) {
+  .circle {
+    width: 35px;
+    height: 35px;
+    font-size: 10px;
+    font-weight: 30;
+    &:hover {
+      width: 40px;
+      height: 40px;
+      box-shadow: rgba(0, 0, 0, 0.9) 0px 22px 80px 4px;
+    }
+  }
+}
+.circlecontainer {
+  display: flex;
+  flex-direction: column;
+}
+/* 아래는 위에서 설정한 내용 */
+.circle {
+  margin: 60%,auto;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px rgb(193, 193, 193);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Gugi';
+  color: rgb(0, 0, 0);
+  border: none;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 22px 80px 4px;
+  }
+}
+/* 기본 스타일: 래퍼 */
+#wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 1170px;
+}

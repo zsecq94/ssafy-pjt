@@ -1,0 +1,118 @@
+@keyframes smoothAppear {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateZ(0);
+  }
+}
+
+.home-main-wrapper{
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Gugi';
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(217deg, rgba(250, 133, 193, 0.8), rgba(255,0,0,0) 70.71%),
+              linear-gradient(127deg, rgba(251, 192, 83, 0.8), rgba(0,255,0,0) 70.71%),
+              linear-gradient(336deg, rgba(169, 212, 245, 0.8), rgba(0,0,255,0) 70.71%);
+  .question-mark {
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 1s;
+    border-radius: 50px;
+    background: white;
+    height: 70px;
+    width: 70px;
+    border: 5px solid transparent;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+     background-origin: border-box;
+    background-clip: content-box, border-box;
+  }            
+  h2 {
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 1s;
+  }
+  .home-main-title{
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 0.5s;
+    margin: 15px 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: midnightblue;
+    span{
+      font-size: 4rem;
+      font-family: 'Pacifico', cursive;
+    }
+  }
+  .home-main-contents{
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 1.5s;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #282c34;
+  }
+  .home-about-project{
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 2s;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: #282c34;
+    text-align: center;
+    span{
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-family: 'Gugi';
+    }
+  }
+  .home-my-website{
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 2.5s;
+    margin: 15px 0;
+    text-align: center;
+    .home-my-website-title{
+      margin-bottom: 5px;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: midnightblue;
+    }
+    a{
+      font-size: 1.5rem;
+      margin: 0 10px;
+    }
+  }
+  p{
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 3s;
+  }
+  .home-go-login{
+    text-align: center;
+    opacity: 0;
+    animation: smoothAppear 1s forwards;
+    animation-delay: 3s;
+    span {
+      opacity: 0;
+      animation: smoothAppear 1s forwards;
+      animation-delay: 3s;
+      font-size: 1.5rem;
+    }
+  }
+  img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border-style: solid;
+  }
+}
