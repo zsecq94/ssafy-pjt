@@ -1,0 +1,44 @@
+[0.084s] Invoking command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/dynamixel_sdk_examples': AMENT_PREFIX_PATH=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk_custom_interfaces:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk_custom_interfaces:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk:/opt/ros/dashing LD_LIBRARY_PATH=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ PYTHONPATH=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk_custom_interfaces/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/iju/new_ws/S08P31C208/ROS/robot_ws/src/DynamixelSDK/dynamixel_sdk_examples -DCMAKE_INSTALL_PREFIX=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk_examples
+[0.166s] -- The C compiler identification is GNU 7.5.0
+[0.350s] -- The CXX compiler identification is GNU 7.5.0
+[0.352s] -- Check for working C compiler: /usr/bin/cc
+[0.564s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.564s] -- Detecting C compiler ABI info
+[1.003s] -- Detecting C compiler ABI info - done
+[1.024s] -- Detecting C compile features
+[1.773s] -- Detecting C compile features - done
+[1.775s] -- Check for working CXX compiler: /usr/bin/c++
+[2.028s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.028s] -- Detecting CXX compiler ABI info
+[2.426s] -- Detecting CXX compiler ABI info - done
+[2.444s] -- Detecting CXX compile features
+[4.400s] -- Detecting CXX compile features - done
+[4.403s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[4.524s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[4.524s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[5.062s] -- Found dynamixel_sdk: 3.7.40 (/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[5.064s] -- Found dynamixel_sdk_custom_interfaces: 3.7.40 (/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk_custom_interfaces/share/dynamixel_sdk_custom_interfaces/cmake)
+[5.090s] -- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[5.255s] -- Found rclcpp: 0.7.16 (/opt/ros/dashing/share/rclcpp/cmake)
+[5.305s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[5.312s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.324s] -- Looking for pthread.h
+[5.686s] -- Looking for pthread.h - found
+[5.689s] -- Looking for pthread_create
+[5.821s] -- Looking for pthread_create - not found
+[5.822s] -- Looking for pthread_create in pthreads
+[6.186s] -- Looking for pthread_create in pthreads - not found
+[6.186s] -- Looking for pthread_create in pthread
+[6.530s] -- Looking for pthread_create in pthread - found
+[6.530s] -- Found Threads: TRUE  
+[6.625s] -- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)
+[6.830s] -- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+[6.834s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.834s] -- Configured cppcheck include dirs: /home/iju/new_ws/S08P31C208/ROS/robot_ws/src/DynamixelSDK/dynamixel_sdk_examples/include
+[6.835s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.835s] -- Added test 'lint_cmake' to check CMake code style
+[6.836s] -- Added test 'uncrustify' to check C / C++ code style
+[6.837s] -- Added test 'xmllint' to check XML markup files
+[6.852s] -- Configuring done
+[6.882s] -- Generating done
+[6.886s] -- Build files have been written to: /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/dynamixel_sdk_examples

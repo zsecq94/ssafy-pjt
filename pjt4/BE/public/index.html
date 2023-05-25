@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>주문 대기열</title>
+  </head>
+  <body>
+    <h1>주문 대기열</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>순번</th>
+          <th>이름</th>
+          <th>출발지</th>
+          <th>도착지</th>
+        </tr>
+      </thead>
+      <tbody id="orderList"></tbody>
+    </table>
+
+    <form id="orderForm">
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" required /><br />
+      <label for="from">출발지:</label>
+      <input type="text" id="from" name="from" required /><br />
+      <label for="to">도착지:</label>
+      <input type="text" id="to" name="to" required /><br />
+      <button type="submit">주문 추가</button>
+      <button id="cancelButton">주문취소</button>
+    </form>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+
+      socket.on("connect", () => {
+        console.log("서버에 연결되었습니다.");
+      });
+
+      socket.on("update", (queue) => {
+        const orderList = document.getElementById("orderList");
+        orderList.innerHTML = "";
+        queue.forEach((order, index) => {
+          const tr = document.createElement("tr");
+          const tdIndex = document.createElement("td");
+          const tdName = document.createElement("td");
+          const tdFrom = document.createElement("td");
+          const tdTo = document.createElement("td");
+          tdIndex.textContent = index + 1;
+          tdName.textContent = order.name;
+          tdFrom.textContent = order.from;
+          tdTo.textContent = order.to;
+          tr.appendChild(tdIndex);
+          tr.appendChild(tdName);
+          tr.appendChild(tdFrom);
+          tr.appendChild(tdTo);
+          orderList.appendChild(tr);
+        });
+      });
+
+      const orderForm = document.getElementById("orderForm");
+      orderForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = document.getElementById("name").value;
+        const from = document.getElementById("from").value;
+        const to = document.getElementById("to").value;
+        const order = { name, from, to };
+        socket.emit("order", order);
+        orderForm.reset();
+      });
+
+      document.getElementById("cancelButton").addEventListener("click", () => {
+        socket.emit("cancel");
+      });
+    </script>
+  </body>
+</html>

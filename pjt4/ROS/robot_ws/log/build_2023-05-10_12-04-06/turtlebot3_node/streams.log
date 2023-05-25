@@ -1,0 +1,43 @@
+[0.072s] Invoking command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_msgs:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_navigation2:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_description:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk_custom_interfaces:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop:/opt/ros/dashing LD_LIBRARY_PATH=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_msgs/lib:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk/lib:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk_custom_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-9/plugins:/opt/ros/dashing/opt/yaml_cpp_vendor/lib:/opt/ros/dashing/opt/rviz_ogre_vendor/lib:/opt/ros/dashing/lib PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ PYTHONPATH=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_msgs/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/cmake /home/iju/new_ws/S08P31C208/ROS/robot_ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_node
+[0.151s] -- The C compiler identification is GNU 7.5.0
+[0.223s] -- The CXX compiler identification is GNU 7.5.0
+[0.223s] -- Check for working C compiler: /usr/bin/cc
+[0.328s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.328s] -- Detecting C compiler ABI info
+[0.439s] -- Detecting C compiler ABI info - done
+[0.439s] -- Detecting C compile features
+[0.795s] -- Detecting C compile features - done
+[0.795s] -- Check for working CXX compiler: /usr/bin/c++
+[0.910s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.910s] -- Detecting CXX compiler ABI info
+[1.036s] -- Detecting CXX compiler ABI info - done
+[1.040s] -- Detecting CXX compile features
+[1.486s] -- Detecting CXX compile features - done
+[1.488s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[1.521s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.522s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.761s] -- Found dynamixel_sdk: 3.7.40 (/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[1.765s] -- Found geometry_msgs: 0.7.1 (/opt/ros/dashing/share/geometry_msgs/cmake)
+[1.792s] -- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[1.839s] -- Found message_filters: 3.1.3 (/opt/ros/dashing/share/message_filters/cmake)
+[1.843s] -- Found nav_msgs: 0.7.1 (/opt/ros/dashing/share/nav_msgs/cmake)
+[1.854s] -- Found rclcpp: 0.7.16 (/opt/ros/dashing/share/rclcpp/cmake)
+[1.872s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[1.873s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.874s] -- Looking for pthread.h
+[1.944s] -- Looking for pthread.h - found
+[1.944s] -- Looking for pthread_create
+[2.017s] -- Looking for pthread_create - not found
+[2.018s] -- Looking for pthread_create in pthreads
+[2.078s] -- Looking for pthread_create in pthreads - not found
+[2.078s] -- Looking for pthread_create in pthread
+[2.144s] -- Looking for pthread_create in pthread - found
+[2.144s] -- Found Threads: TRUE  
+[2.176s] -- Found sensor_msgs: 0.7.1 (/opt/ros/dashing/share/sensor_msgs/cmake)
+[2.188s] -- Found std_srvs: 0.7.1 (/opt/ros/dashing/share/std_srvs/cmake)
+[2.193s] -- Found tf2: 0.11.6 (/opt/ros/dashing/share/tf2/cmake)
+[2.199s] -- Found tf2_ros: 0.11.6 (/opt/ros/dashing/share/tf2_ros/cmake)
+[2.248s] -- Found turtlebot3_msgs: 2.2.1 (/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake)
+[2.613s] -- Configuring done
+[2.654s] -- Generating done
+[2.655s] -- Build files have been written to: /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_node

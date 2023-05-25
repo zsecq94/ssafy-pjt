@@ -29,6 +29,16 @@ const SignUp = () => {
       birthday: birthday,
       membership: membership,
     };
+    {
+      "email" : "kyj95112@naver.com",
+      "password" : "1q2w3e4r",
+      "memberName" : "김철수",
+      "role" : "DONOR",
+      "phoneNumber" : "010-9531-9488",
+      "organizationName" : "천사급식소",
+      "address" : "광주광역시 남구 용대로",
+      "detail" : "주 6일 독거노인, 노숙자 분들에게 점심식사를 제공하는 무료 급식소 입니다."
+  }
 
       try {
         const response = await axios.post("https://j8c206.p.ssafy.io/api/v1/users", signupData);

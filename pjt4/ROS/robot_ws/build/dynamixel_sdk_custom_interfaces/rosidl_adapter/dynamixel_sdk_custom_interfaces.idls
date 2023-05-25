@@ -1,0 +1,2 @@
+/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:msg/SetPosition.idl
+/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/dynamixel_sdk_custom_interfaces/rosidl_adapter/dynamixel_sdk_custom_interfaces:srv/GetPosition.idl

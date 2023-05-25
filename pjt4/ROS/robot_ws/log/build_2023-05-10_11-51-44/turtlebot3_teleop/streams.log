@@ -1,0 +1,46 @@
+[1.412s] Invoking command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/src/turtlebot3/turtlebot3_teleop': PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ PYTHONPATH=/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/prefix_override:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build install --record /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/install.log --install-scripts $base/lib/turtlebot3_teleop --single-version-externally-managed
+[2.164s] /home/iju/.local/lib/python3.6/site-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[2.164s]   % (opt, underscore_opt)
+[2.222s] running egg_info
+[2.223s] creating ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info
+[2.223s] writing ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/PKG-INFO
+[2.223s] writing dependency_links to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/dependency_links.txt
+[2.223s] writing entry points to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/entry_points.txt
+[2.223s] writing requirements to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/requires.txt
+[2.223s] writing top-level names to ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/top_level.txt
+[2.223s] writing manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[2.231s] reading manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[2.232s] writing manifest file '../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info/SOURCES.txt'
+[2.232s] running build
+[2.232s] running build_py
+[2.232s] creating /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build
+[2.232s] creating /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build/lib
+[2.232s] creating /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[2.233s] copying turtlebot3_teleop/__init__.py -> /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop
+[2.233s] creating /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[2.233s] copying turtlebot3_teleop/script/__init__.py -> /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[2.233s] copying turtlebot3_teleop/script/teleop_keyboard.py -> /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script
+[2.233s] /home/iju/.local/lib/python3.6/site-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.233s]   setuptools.SetuptoolsDeprecationWarning,
+[2.233s] running install
+[2.233s] running install_lib
+[2.234s] creating /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop
+[2.234s] creating /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/script
+[2.234s] copying /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/__init__.py -> /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/script
+[2.234s] copying /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/script/teleop_keyboard.py -> /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/script
+[2.235s] copying /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build/lib/turtlebot3_teleop/__init__.py -> /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop
+[2.235s] byte-compiling /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/script/__init__.py to __init__.cpython-36.pyc
+[2.235s] byte-compiling /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/script/teleop_keyboard.py to teleop_keyboard.cpython-36.pyc
+[2.236s] byte-compiling /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop/__init__.py to __init__.cpython-36.pyc
+[2.236s] running install_data
+[2.237s] creating /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/share/ament_index
+[2.237s] creating /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/share/ament_index/resource_index
+[2.237s] creating /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[2.237s] copying resource/turtlebot3_teleop -> /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/share/ament_index/resource_index/packages
+[2.237s] copying package.xml -> /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/share/turtlebot3_teleop
+[2.237s] running install_egg_info
+[2.244s] Copying ../../../build/turtlebot3_teleop/turtlebot3_teleop.egg-info to /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages/turtlebot3_teleop-2.1.4-py3.6.egg-info
+[2.244s] running install_scripts
+[2.270s] Installing teleop_keyboard script to /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/turtlebot3_teleop
+[2.271s] writing list of installed files to '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/install.log'
+[2.303s] Invoked command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/src/turtlebot3/turtlebot3_teleop' returned '0': PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ PYTHONPATH=/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/prefix_override:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/turtlebot3_teleop build --build-base /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/build install --record /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_teleop/install.log --install-scripts $base/lib/turtlebot3_teleop --single-version-externally-managed

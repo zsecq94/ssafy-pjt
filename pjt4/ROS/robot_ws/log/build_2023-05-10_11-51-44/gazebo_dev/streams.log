@@ -1,0 +1,40 @@
+[0.074s] Invoking command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake /home/iju/new_ws/S08P31C208/ROS/robot_ws/src/gazebo_ros_pkgs/gazebo_dev -DCMAKE_INSTALL_PREFIX=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev
+[0.142s] -- The C compiler identification is GNU 7.5.0
+[0.198s] -- The CXX compiler identification is GNU 7.5.0
+[0.198s] -- Check for working C compiler: /usr/bin/cc
+[0.323s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.324s] -- Detecting C compiler ABI info
+[0.442s] -- Detecting C compiler ABI info - done
+[0.447s] -- Detecting C compile features
+[0.804s] -- Detecting C compile features - done
+[0.804s] -- Check for working CXX compiler: /usr/bin/c++
+[0.945s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.946s] -- Detecting CXX compiler ABI info
+[1.110s] -- Detecting CXX compiler ABI info - done
+[1.114s] -- Detecting CXX compile features
+[1.627s] -- Detecting CXX compile features - done
+[1.627s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[1.678s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[1.678s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.073s] -- Configuring done
+[2.075s] -- Generating done
+[2.080s] -- Build files have been written to: /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev
+[2.081s] Invoked command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake /home/iju/new_ws/S08P31C208/ROS/robot_ws/src/gazebo_ros_pkgs/gazebo_dev -DCMAKE_INSTALL_PREFIX=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev
+[2.084s] Invoking command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --build /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev -- -j6 -l6
+[2.145s] Invoked command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --build /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev -- -j6 -l6
+[2.312s] Invoking command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --build /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev --target install -- -j6 -l6
+[2.641s] [36mInstall the project...[0m
+[2.693s] -- Install configuration: ""
+[2.693s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/ament_index/resource_index/package_run_dependencies/gazebo_dev
+[2.693s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/ament_index/resource_index/parent_prefix_path/gazebo_dev
+[2.693s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/gazebo_dev/environment/ament_prefix_path.sh
+[2.694s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/gazebo_dev/environment/path.sh
+[2.694s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/gazebo_dev/local_setup.bash
+[2.694s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/gazebo_dev/local_setup.sh
+[2.694s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/gazebo_dev/local_setup.zsh
+[2.694s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/ament_index/resource_index/packages/gazebo_dev
+[2.694s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_dev-extras.cmake
+[2.694s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig.cmake
+[2.694s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig-version.cmake
+[2.694s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/gazebo_dev/share/gazebo_dev/package.xml
+[2.708s] Invoked command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --build /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/gazebo_dev --target install -- -j6 -l6

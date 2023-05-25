@@ -1,0 +1,46 @@
+[0.020s] Invoking command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake /home/iju/new_ws/S08P31C208/ROS/robot_ws/src/turtlebot3/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer
+[0.137s] -- The C compiler identification is GNU 7.5.0
+[0.279s] -- The CXX compiler identification is GNU 7.5.0
+[0.280s] -- Check for working C compiler: /usr/bin/cc
+[0.451s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.451s] -- Detecting C compiler ABI info
+[0.582s] -- Detecting C compiler ABI info - done
+[0.583s] -- Detecting C compile features
+[1.048s] -- Detecting C compile features - done
+[1.048s] -- Check for working CXX compiler: /usr/bin/c++
+[1.204s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.204s] -- Detecting CXX compiler ABI info
+[1.413s] -- Detecting CXX compiler ABI info - done
+[1.421s] -- Detecting CXX compile features
+[3.022s] -- Detecting CXX compile features - done
+[3.025s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[3.140s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[3.140s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.765s] -- Configuring done
+[3.767s] -- Generating done
+[3.768s] -- Build files have been written to: /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer
+[3.772s] Invoked command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake /home/iju/new_ws/S08P31C208/ROS/robot_ws/src/turtlebot3/turtlebot3_cartographer -DCMAKE_INSTALL_PREFIX=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer
+[3.776s] Invoking command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --build /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer -- -j6 -l6
+[3.930s] Invoked command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --build /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer -- -j6 -l6
+[4.158s] Invoking command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --build /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer --target install -- -j6 -l6
+[4.498s] [36mInstall the project...[0m
+[4.564s] -- Install configuration: ""
+[4.580s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config
+[4.580s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/config/turtlebot3_lds_2d.lua
+[4.580s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch
+[4.581s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/cartographer.launch.py
+[4.581s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/launch/occupancy_grid.launch.py
+[4.581s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz
+[4.582s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/rviz/tb3_cartographer.rviz
+[4.582s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/package_run_dependencies/turtlebot3_cartographer
+[4.583s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/parent_prefix_path/turtlebot3_cartographer
+[4.583s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/ament_prefix_path.sh
+[4.584s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/environment/path.sh
+[4.584s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.bash
+[4.584s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.sh
+[4.585s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/local_setup.zsh
+[4.585s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/ament_index/resource_index/packages/turtlebot3_cartographer
+[4.586s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig.cmake
+[4.588s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/cmake/turtlebot3_cartographerConfig-version.cmake
+[4.608s] -- Installing: /home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.xml
+[4.617s] Invoked command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake --build /home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_cartographer --target install -- -j6 -l6

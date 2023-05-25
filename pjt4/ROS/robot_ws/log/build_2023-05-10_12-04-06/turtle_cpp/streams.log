@@ -1,0 +1,89 @@
+[0.028s] Invoking command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtle_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop:/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake /home/iju/new_ws/S08P31C208/ROS/robot_ws/src/turtle_cpp -DCMAKE_INSTALL_PREFIX=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtle_cpp
+[0.051s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[0.081s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.364s] -- Found std_msgs: 0.7.1 (/opt/ros/dashing/share/std_msgs/cmake)
+[0.387s] -- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[0.479s] -- Boost version: 1.65.1
+[0.479s] -- Found the following Boost libraries:
+[0.480s] --   thread
+[0.480s] --   system
+[0.480s] --   filesystem
+[0.480s] --   program_options
+[0.480s] --   regex
+[0.480s] --   iostreams
+[0.480s] --   date_time
+[0.480s] --   chrono
+[0.480s] --   atomic
+[0.506s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread (found version "3.0.0") 
+[0.520s] -- Boost version: 1.65.1
+[0.520s] -- Looking for OGRE...
+[0.530s] -- Found Ogre Ghadamon (1.9.0)
+[0.531s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.565s] -- Looking for OGRE_Paging...
+[0.565s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.565s] -- Looking for OGRE_Terrain...
+[0.565s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.566s] -- Looking for OGRE_Property...
+[0.566s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.566s] -- Looking for OGRE_RTShaderSystem...
+[0.566s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.566s] -- Looking for OGRE_Volume...
+[0.566s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.567s] -- Looking for OGRE_Overlay...
+[0.567s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.723s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so;-lpthread;-lpthread (found suitable version "3.0.0", minimum required is "2.3.0") 
+[0.729s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.741s] -- Checking for module 'libzmq >= 4'
+[0.763s] --   Found libzmq , version 4.2.5
+[0.890s] -- Checking for module 'uuid'
+[0.940s] --   Found uuid, version 2.31.1
+[1.006s] -- Checking for module 'tinyxml2'
+[1.029s] --   Found tinyxml2, version 6.0.0
+[1.094s] -- Looking for dlfcn.h - found
+[1.095s] -- Looking for libdl - found
+[1.095s] -- FreeImage.pc not found, we will search for FreeImage_INCLUDE_DIRS and FreeImage_LIBRARIES
+[1.225s] -- Checking for module 'gts'
+[1.245s] --   Found gts, version 0.7.6
+[1.343s] -- Checking for module 'libswscale'
+[1.360s] --   Found libswscale, version 4.8.100
+[1.461s] -- Checking for module 'libavdevice >= 56.4.100'
+[1.493s] --   Found libavdevice , version 57.10.100
+[1.643s] -- Checking for module 'libavformat'
+[1.652s] --   Found libavformat, version 57.83.100
+[1.732s] -- Checking for module 'libavcodec'
+[1.757s] --   Found libavcodec, version 57.107.100
+[1.830s] -- Checking for module 'libavutil'
+[1.850s] --   Found libavutil, version 55.78.100
+[1.918s] -- Checking for module 'jsoncpp'
+[1.941s] --   Found jsoncpp, version 1.7.4
+[1.999s] -- Checking for module 'libzip'
+[2.023s] --   Found libzip, version 1.1.2
+[2.061s] -- Found gazebo_ros_pkgs: 3.3.5 (/opt/ros/dashing/share/gazebo_ros_pkgs/cmake)
+[2.061s] -- Found geometry_msgs: 0.7.1 (/opt/ros/dashing/share/geometry_msgs/cmake)
+[2.067s] -- Found nav_msgs: 0.7.1 (/opt/ros/dashing/share/nav_msgs/cmake)
+[2.077s] -- Found rclcpp: 0.7.16 (/opt/ros/dashing/share/rclcpp/cmake)
+[2.089s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[2.090s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.115s] -- Found sensor_msgs: 0.7.1 (/opt/ros/dashing/share/sensor_msgs/cmake)
+[2.126s] -- Found tf2: 0.11.6 (/opt/ros/dashing/share/tf2/cmake)
+[2.136s] CMake Error at CMakeLists.txt:24 (find_package):
+[2.136s]   By not providing "Findturtlebot3.cmake" in CMAKE_MODULE_PATH this project
+[2.136s]   has asked CMake to find a package configuration file provided by
+[2.137s]   "turtlebot3", but CMake did not find one.
+[2.137s] 
+[2.137s]   Could not find a package configuration file provided by "turtlebot3" with
+[2.137s]   any of the following names:
+[2.137s] 
+[2.137s]     turtlebot3Config.cmake
+[2.137s]     turtlebot3-config.cmake
+[2.138s] 
+[2.138s]   Add the installation prefix of "turtlebot3" to CMAKE_PREFIX_PATH or set
+[2.138s]   "turtlebot3_DIR" to a directory containing one of the above files.  If
+[2.138s]   "turtlebot3" provides a separate development package or SDK, be sure it has
+[2.138s]   been installed.
+[2.138s] 
+[2.138s] 
+[2.139s] -- Configuring incomplete, errors occurred!
+[2.139s] See also "/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtle_cpp/CMakeFiles/CMakeOutput.log".
+[2.139s] See also "/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtle_cpp/CMakeFiles/CMakeError.log".
+[2.143s] Invoked command in '/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtle_cpp' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtlebot3_teleop:/opt/ros/dashing PS1=\u@\h \[\033[32m\]\w\[\033[33m\]$(parse_git_branch)\[\033[00m\] $ /usr/bin/cmake /home/iju/new_ws/S08P31C208/ROS/robot_ws/src/turtle_cpp -DCMAKE_INSTALL_PREFIX=/home/iju/new_ws/S08P31C208/ROS/robot_ws/install/turtle_cpp

@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from gazebo_msgs/msg/LogicalCameraImage.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+
+module gazebo_msgs {
+  module msg {
+    struct LogicalCameraImage {
+      @verbatim (language="comment", text=
+        " pose of the logical camera")
+      geometry_msgs::msg::Pose camera_pose;
+
+      @verbatim (language="comment", text=
+        " name of the detected model")
+      sequence<string> model_name;
+
+      @verbatim (language="comment", text=
+        " relative pose of the detected model")
+      sequence<geometry_msgs::msg::Pose> model_pose;
+    };
+  };
+};

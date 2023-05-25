@@ -1,0 +1,8 @@
+/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_navigation2/CMakeFiles/install/strip.dir
+/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_navigation2/CMakeFiles/install/local.dir
+/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_navigation2/CMakeFiles/test.dir
+/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_navigation2/CMakeFiles/list_install_components.dir
+/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_navigation2/CMakeFiles/uninstall.dir
+/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_navigation2/CMakeFiles/edit_cache.dir
+/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_navigation2/CMakeFiles/rebuild_cache.dir
+/home/iju/new_ws/S08P31C208/ROS/robot_ws/build/turtlebot3_navigation2/CMakeFiles/install.dir
