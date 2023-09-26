@@ -1,238 +1,116 @@
-# Final Project - YB MOVIE
-
-## 0. 팀원 소개
- 
-  | 이름        | 직책     | 업무                   |
-  | ----------- | ------- | ---------------------- |
-  | 여도현       | 팀장 | django와 월드컵 담당      |
-  | 배중권       | 팀원 | 전반적인 vue 프론트단 담당 |
-
-## 0.5. Process
-
- - `진행 일정`
- 
-    | 날짜        | 이름     | 작업                   |
-    | ----------- | ------- | ---------------------- |
-    | 11/16       | 여도현  | django로 db 기초 설계, cors인증 설정 |
-    |             | 배중권  |  로그인, 로그아웃 기능 구현       |
-    | 11/17       | 여도현  | models.py, views.py 작성 및 월드컵페이지 기초작성         |
-    |             | 배중권  | 로그인, 로그아웃, 회원가입 마무리, 프로필 기초 설계              |
-    | 11/18       | 여도현   | 월드컵 페이지 추가 작성     |
-    |             | 배중권   | 디테일 페이지 기초 작성, 유튜브 api 데이터 받기      |
-    | 11/19       | 여도현  | 월드컵 페이지 완성 및 월드컵용 데이터 추가 |
-    |             | 배중권  | 디테일 페이지 작성, 리뷰 페이지 수정       |
-    | 11/20       | 여도현  | 월드컵 데이터 기반으로 추천영화 출력 완성     |
-    |             | 배중권  | 디테일 페이지 작성, 프로필 페이지 작업 시작              |
-    | 11/21       | 여도현   | 인덱스 페이지 작업 시작, 인덱스 페이지 호버 구현, 좋아요 기능 추가       |
-    |             | 배중권   | 프로필 수정 작업   |
-    | 11/22       | 여도현  | 인덱스 페이지 팔로우 기능, 검색기능 추가 |
-    |             | 배중권  | 페이지네이션 작업 시작, 완료 |
-    | 11/23       | 여도현  | 인덱스 페이지 영화 리스트 랜덤 순서 출력 기능 추가      |
-    |             | 배중권  | 프로필 페이지 모달기능 추가, 디테일 페이지 유튜브영상 모달기능 추가   |
-    | 11/24       | 여도현   | 월드컵 완료 후 폭죽 기능 추가      |
-    |             | 배중권   | 프로필 페이지 완료, 디테일 페이지 완료       |
-
-## 1. Intro
-
-YB MOVIE는 데이터 기반 영화 추천 서비스 입니다.
-사용자는 영화에 대한 코멘트를 남길 수 있으며, 영화 이상형월드컵을 이용해 사용자가 선호하는 장르를 파악하여 영화를 추천해주는 서비스입니다.
-
-## 1.5. Algorithm Introduce
-
-저희가 사용한 알고리즘은 월드컵을 진행하는 중 결승전에 진출한 영화 2개를 활용하여 tmdb에 추천 영화를 출력해주는 recommend api를 활용하였습니다. 
-
-## 2. Requirement
-
-1. Python Web Framework
-
-   1. Django 3.2.13
-
-2. Javascript Web Framework
-
-   1. Vue 2.7.14
-      - vuex 3.6.2
-      - vuetify 2.6.0
-
-## 2. Data
-
-#### -  Seed data
-
-- [네이버 영화](https://movie.naver.com) 영화에 대한 데이터를 수집하였습니다. 
-
-- `db.sqplite3` 에서 테이블간의 관계는 아래와 같습니다.
-
-  - `movies/genre`
-
-    | 필드명 | 자료형  | 설명        |
-    | ------ | ------- | ----------- |
-    | id     | Integer | Primary Key |
-    | name   | String  | 장르 이름   |
-
-  
-
-  - `movies/directors`
-
-    | 필드명      | 자료형  | 설명            |
-    | ----------- | ------- | --------------- |
-    | id          | Integer | Primary Key     |
-    | name        | String  | 감독 이름       |
-    | role        | String  | 역할            |
-    | img_url     | Text    | 감독 이미지 URL |
-    | description | Text    | 감독 설명       |
-
-  
-  
-  
-  - `movies/actors`
-  
-    | 필드명      | 자료형  | 설명            |
-    | ----------- | ------- | --------------- |
-    | id          | Integer | Primary Key     |
-    | name        | String  | 배우 이름       |
-    | role        | String  | 역할            |
-    | img_url     | Text    | 배우 이미지 URL |
-    | description | Text    | 배우 설명       |
-  
-  
-  
-  - `movies/movies`
-  
-    | 필드명      | 자료형  | 설명                   |
-    | ----------- | ------- | ---------------------- |
-    | id          | Integer | Primary Key            |
-    | title       | String  | 영화 제목              |
-    | title_en    | String  | 영화 영문 제목         |
-    | rate        | String  | 평점                   |
-    | directors   | Array   | 영화 감독들의 pk       |
-    | actors      | Array   | 출연 배우들의 pk       |
-    | img_url     | Text    | 영화 포스터 이미지 URL |
-    | description | Text    | 영화 줄거리            |
-    | open_date   | String  | 개봉일                 |
-    | genres      | Array   | 영화 장르 pk 리스트    |
-    | like_users  | Integer | 영화에 좋아요한 유저   |
-    | follow_users| Interger| 영화를 북마크한 유저   |
+# 📎 YB MOVIE
 
-  - `movies/wordcupMovies`
-  
-    | 필드명      | 자료형  | 설명                   |
-    | ----------- | ------- | ---------------------- |
-    | id          | Integer | Primary Key            |
-    | title       | String  | 영화 제목              |
-    | title_en    | String  | 영화 영문 제목         |
-    | rate        | String  | 평점                   |
-    | directors   | Array   | 영화 감독들의 pk       |
-    | actors      | Array   | 출연 배우들의 pk       |
-    | img_url     | Text    | 영화 포스터 이미지 URL |
-    | description | Text    | 영화 줄거리            |
-    | open_date   | String  | 개봉일                 |
-    | genres      | Array   | 영화 장르 pk 리스트    |
-    | tmdb        | Integer | 해당 영화의 tmdb pk   |
-    | users       | Interger| 해당 영화를 선택한 유저|
-  
+---
 
+### 📌 Project Summary & Background
 
+YB MOVIE는 데이터 기반 영화 추천 서비스 입니다. 사용자는 영화에 대한코멘트를 남길 수 있으며, 영화 이상형월드컵을 이용해 사용자가선호하는 장르를 파악하여 영화를 추천해주는 서비스입니다.  
 
-## 3. Getting Started
+영화는 많은 사람들에게 큰 관심과 즐거움을 줍니다. 그러나 너무 많은 영화가 있어서 사용자들이 어떤 영화를 선택해야 할지 결정하기 어렵다는 문제가 있습니다. 이러한 문제를 해결하고자 저희 팀은 데이터 기반의 영화 추천 서비스를 개발하기로 결정했습니다.  
 
-### 각각의 폴더로 들어간 뒤 터미널에 명령을 입력하세요.
+사용자들의 선호도와 취향을 파악하여 최적의 영화를 추천하는 것은 사용자 경험(UX) 개선에 큰 도움이 됩니다. 저희 팀은 이러한 선호도 파악을 위해 영화에 대한 코멘트 시스템과 장르별 이상형 월드컵을 도입하여 사용자들이 좋아하는 장르와 관련된 영화를 추천하는 기능을 개발하였습니다. 이를 통해 사용자들이 보다 만족할 수 있는 영화 추천 서비스를 제공하고자 했습니다.  
 
-- backend 폴더에서
-  - `python -m venv venv`
-  - `source venv/Scripts/activate`
-  - 최초 실행할 경우 꼭 수행
-    - 데이터베이스 생성
-      - `python manage.py migrate`
-    - json 데이터를 DB에 dump
-      - `python manage.py loaddata movies/worldcupmovies.json movies/newmovie.json movies/movies.json 
-         movies/genre.json movies/directors.json movies/actors.json`
-  - `python manage.py runserver`
-- frontend 폴더에서
-  - `npm i`
-  - `npm run serve`
 
 
-## 5. Reuslt
+### ❕ Role
 
-  
- 
-## 6. 실행 화면
+- Front-End : 1명
+- Back-End : 1명
 
-### LOGIN
 
-<hr>
 
-![login](./login.gif)
+### 📜 Technology Stack
 
+- Front-End : JavaScript, Vue.js, Vuex, Vuetify, Bootstrap
+- Back-End : Django
 
-<br>
 
-### SIGNUP
 
-<hr>
+### 🔨 Main Function
 
-![signup](./signup.gif)
+- 영화 상세정보
 
+![](https://jk-portfolio1.web.app/images/Modal/pjt4/1.gif)
 
-<br>
+영화의 상세정보를 확인할 수 있는 모달 형식의 컴포넌트를 구현하였습니다. 이는 사용자가 현재 페이지에서 벗어나지 않고 필요한 정보를 확인할 수 있도록 하기 위함입니다. 이렇게 함으로써 사용자 경험을 향상시키고, 원활한 정보 접근성을 제공합니다. 줄거리 및 평가는 '보기' 버튼을 통해 활성화되며, 이를 통해 사용자는 원하는 정보만 선택적으로 볼 수 있습니다. 이 방식은 한 번에 많은 양의 텍스트를 보여주는 것이 아니라, 필요한 정보만 직접 선택하여 볼 수 있도록 하기 위해 이 방식을 선택했습니다. Vuetify의 Panels 컴포넌트를 활용하여 이 기능을 구현하였습니다.
 
-### HOME
+Youtube API를 활용하여 영화 제목과 'trailer' 단어를 조합하여 썸네일 이미지를 받아와 레이아웃을 구성하였습니다. 이 방식은 관련된 비주얼 요소로서 영화에 대한 사전 정보 제공과 동시에 사용자의 호감도와 참여율을 높이기 위함입니다. 또한, 영상 시청 기능은 모달창 안의 다른 모달창으로 구현하였습니다. 이 역시 사용자가 주요 컨텐츠에서 벗어나지 않도록 하기 위함이고, iframe을 활용하여 실제 영상 시청 기능을 구현하였으며, 사용자가 직접적인 경험을 할 수 있도록 만들었습니다.
 
-<hr>
 
-![home](./home.gif)
-#### 월드컵을 한번도 진행하지 않은 상태면 추천영화 목록이 나오지 않습니다.
-#### 전체 영화 목록은 20개씩 페이지의 가장 밑단을 터치하면 새로이 출력됩니다.
 
-<br>
+- 영화 월드컵
 
-### WORLDCUP
+![](https://jk-portfolio1.web.app/images/Modal/pjt4/2.gif)  
 
-<hr>
+TMDB의 recommend API를 활용해 추천 영화를 response 받는 알고리즘 기능을 추가했습니다. 영화 월드컵은 16강으로 진행되며 매 라운드마다 영화가 랜덤하게 셔플되고, 최종 결승전에 진출한 두 영화를 활용하여 추천영화를 추출합니다. 프로젝트 수행 당시 '월드컵' 형태의 선호도 투표가 유행이었기 때문에, 이 방식을 선택하였습니다. 이러한 유행성 요소를 활용함으로써 서비스는 사용자들에게 친근감과 재미를 제공하며, 동시에 실제 사용자 취향 데이터를 얻어내는데 효과적일 것이라 생각했습니다.
 
-![worldcup](./worldcup.gif)
-#### 저희의 대표 기능으로 총 16강으로 진행되며 매 라운드마다 영화의 순서는 랜덤하게 셔플되고 
-#### 최종 우승영화와 준우승 영화의 데이터를 저장하여 추천영화에 활용합니다.
-<br>
 
-### RECOMMEND
 
-<hr>
+- 월드컵 결과 기반 영화 추천
 
-![recommend](./recommend.gif)
-#### 월드컵을 진행한 이후에는 추천영화 목록 출력
+![](https://jk-portfolio1.web.app/images/Modal/pjt4/3.gif)  
 
-<br>
+영화 월드컵을 마치면 추천 영화 컴포넌트가 새롭게 나타납니다. 추천 영화는 월드컵 결과를 기반으로 출력하며 영화 선택시 TMDB의 영화 정보 페이지로 넘어가는 아웃링크 방식으로 구성했습니다. 또한 사용자는 언제든지 영화 월드컵을 진행하여 추천 영화 리스트를 바꿀 수 있습니다.
 
-### COMMENT
 
-<hr>
 
-![comment](./comment.gif)
-#### 영화의 포스터에 마우스를 가져다 대고 별점을 누르면 comment모달 창이 나옵니다.
+- 평가
 
-<br>
+![](https://jk-portfolio1.web.app/images/Modal/pjt4/4.gif)  
 
-### DETAIL
+영화별로 마우스 호버시 별모양의 평가 역영이 생깁니다. 별모양 클릭 시 영화를 평가할 수 있는 모달창에 새롭게 나옵니다. 사용자는 간편하게 영화를 평가할 수 있고, 평가한 내용은 영화 상세정보에서 확인할 수 있습니다.
 
-<hr>
 
-![detail](./detail.gif)
-#### 디테일 화면에는 영화의 제목, 포스터, 평점, 댓글, 관련 영상, 줄거리가 나옵니다.
 
-<br>
+- 검색 및 북마크
 
-### SEARCHBOOKMARK
+![](https://jk-portfolio1.web.app/images/Modal/pjt4/5.gif)  
 
-<hr>
+영화 검색기능은 원하는 정보를 빠르게 얻을 수 있도록 Vuex의 상태관리 기능을 활용하여 실시간으로 처리하도록 구현했습니다. 또한, 사용자가 특정 영화를 나중에 다시 찾아볼 수 있도록 하거나, 자신만의 영화 컬렉션을 만들 수 있도록 지원하기 위해 북마크 기능을 추가하여 사용자가 등록한 영화 리스트만 따로 확인할 수 있도록 구현했습니다.
 
-![searchbookmark](./searchbookmark.gif)
-#### 검색기능과 북마크 기능이 있어 두가지 동시에 적용이 가능합니다.
 
-<br>
 
-## 7. 느낀점 및 후기
- 
-  | 이름        | 소감                     |
-  | ----------- | ----------------------------- |
-  | 여도현       | 처음에는 어떻게 진행해야 할지 많이 막막했는데 한땀 한땀 만들어 나가면서 자신감이 붙었고 시간이 더 주어진다면 훨씬 많은 기능을 추가할 수 있을꺼같은 자신감을 얻었습니다. <br> 또한 데이터를 왜 서버단에서 처리해야 하는지 느끼게 되는 프로젝트였습니다.|
-  | 배중권       | 소감 작성 |
+---
+
+### 🚩 Learned
+
+##### # 추천 알고리즘
+
+영화추천알고리즘은 영화 월드컵을 진행하여 결승전에 진출한 영화 2개를활용하여 Tmdb에서 추천 영화를 넘겨받는 Recommend API를 활용했습니다.  
+
+##### # Youtube API
+
+YouTube API와 Axios 라이브러리를 처음 사용해 API 요청과 응답 처리를연결하는 방법이 어려웠습니다. 또한, 영화 제목과 트레일러 라는검색어를 조합하여 정확한 검색을 보내는 로직을 개발하고, API 요청상태에 따른 사용자 경험을 관리하는 비동기 처리와 UI 업데이트도고려해야 했습니다. API 키 관리와 보안 역시 중요한 고려사항이었는데,이러한 어려움을 극복하기 위해 문서와 커뮤니티의 지식을 활용하여점진적으로 기능을 완성시켰습니다.  
+
+##### # Modal
+
+사용자들이 조금이라도 더 편리하게 사용하기위한 방법을 찾던 중 모달컴포넌트를 알게되었습니다. 사용자의 시선을 집중시키고 중요페이지를 유지하며 영화의 정보를 빠르게 파악할수있고, 일관된디자인을 제공할수 있기 때문에 모달을 적극으로 활용하여 사용자들이영화의 정보를 쉽고 빠르게 파악할 수 있도록 구현했습니다.  
+
+
+
+### 🔑 Result
+
+- 처음 수행한 프로젝트였지만, 초기에는 어떻게 시작해야 할지 막막함을느꼈습니다. 하지만 단계적으로 기능을 구현하며 자신감을 얻게되었습니다. 추천 알고리즘, API 처리와 보안, 비동기 처리, 모달컴포넌트 활용, 사용자 편의성 고려 등 다양한 과제를 공식 문서와커뮤니티 지식을 활용하여 해결해나감으로써 점차 프로젝트가 완성되는과정을 경험하게 되었습니다.
+
+
+
+### ⚙️ Getting Started
+
+```javascript
+// backend 폴더에서
+    - python -m venv venv
+    - source venv/Scripts/activate
+
+    // 최초 실행할 경우 꼭 수행
+        // 데이터베이스 생성
+            - python manage.py migrate
+
+        // json 데이터를 DB에 dump
+            - python manage.py loaddata movies/worldcupmovies.json movies/newmovie.json movies/movies.json 
+              movies/genre.json movies/directors.json movies/actors.json
+        - python manage.py runserver
+
+// frontend 폴더에서
+    - npm i
+    - npm run serve
+```
